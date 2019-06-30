@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		title Logged page
+		link(rel="stylesheet", type="text/css", href="/static/style.css")
+	body
+		div.user-info
+			h2.login-info You have successfully logged in!
+			img(src="https://png.pngtree.com/svg/20170703/d09e261e9c.svg", width="150px", height="150px").success-icon
+			h2.user-welcome Welcome #[span.user-name #{user.displayName}] to your google account!
+			h3.user-id Your ID number is #[span.user-number #{user.id}]
